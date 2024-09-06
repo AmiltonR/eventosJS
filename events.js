@@ -1,8 +1,14 @@
 const button = document.getElementById('changeColorButton');
 const colorText = document.getElementById('colorText');
+buttonReset = document.getElementById('resetColor');
 
-button.addEventListener('click', () =>{
+button.addEventListener('click', () => {
     document.body.style.backgroundColor = getRandomColor();
+});
+
+buttonReset.addEventListener('click', () => {
+    document.body.style.backgroundColor = '#FFFFFF';
+    colorText.innerHTML = '#FFFFFF'
 });
 
 function getRandomColor(){
