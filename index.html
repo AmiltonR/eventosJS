@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio de Eventos en JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Manejo de Eventos en JavaScript</h1>
-    <button id="changeColorButton">Cambiar el color de Fondo</button>
-    <button id="resetColor">Reset Color</button>
-    <p id="colorText"></p>
+    <div class="container mt-5">
+        <div class="row justify-content-left">
+            <div class="col-md-6">
+                <h1 class="text-center">Manejo de Eventos en JavaScript</h1>
+                <button id="changeColorButton" class="btn btn-primary">Cambiar el color de Fondo</button>
+                <button id="resetColor" class="btn btn-primary">Reset Color</button>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-5">
+                    <h2 id="colorText" class="text-primary mb-3 text-center"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="events.js"></script>
 </body>
+
 </html>
