@@ -1,6 +1,8 @@
 const button = document.getElementById('changeColorButton');
 const colorText = document.getElementById('colorText');
 buttonReset = document.getElementById('resetColor');
+whiteText = document.getElementById('whiteText');
+text = document.getElementById('title');
 
 button.addEventListener('click', () => {
     document.body.style.backgroundColor = getRandomColor();
@@ -8,7 +10,12 @@ button.addEventListener('click', () => {
 
 buttonReset.addEventListener('click', () => {
     document.body.style.backgroundColor = '#FFFFFF';
-    colorText.innerHTML = '#FFFFFF'
+    text.style.color = '#000000';
+    colorText.innerHTML = '#FFFFFF';
+});
+
+whiteText.addEventListener('click', () => {
+    text.style.color = '#FFFFFF';
 });
 
 function getRandomColor(){
